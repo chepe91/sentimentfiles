@@ -1,0 +1,47 @@
+
+<div class="container">
+
+    <h2>Sentiments</h2>
+
+    {{#each data}}
+    <div class="row">
+
+        <div class="col-md-12">
+            <label>Filename: {{ filename }}</label> &nbsp;
+            <label>Popolarity: {{ sentiment.result.polarity }}</label> &nbsp;
+            <label>Type: {{ sentiment.result.type }}</label>
+        </div>
+       
+        <div class="col-md-12">
+            {{#each sentiment.sentences}} 
+                <span>
+                    Sentense:
+                    {{ sentence }} 
+                </span>
+                
+                <label>Popolarity: {{ sentiment.polarity }}</label> &nbsp;
+                <label>Type: {{ sentiment.type }}</label>  &nbsp;
+                <br>
+            {{/each}}
+
+            <hr>
+        </div>
+        
+    </div>
+    {{/each}}
+
+    
+    <a href="/home">
+        <button type="button" class="btn btn-primary">Back</button>
+    </a>
+</div>
+
+    
+
+       
+
+
+        
+
+
+   
