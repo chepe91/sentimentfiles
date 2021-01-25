@@ -8,7 +8,7 @@
 
         <div class="col-md-12">
             <label>Filename: {{ filename }}</label> &nbsp;
-            <label>Popolarity: {{ sentiment.result.polarity }}</label> &nbsp;
+            <label>Polarity: {{ sentiment.result.polarity }}</label> &nbsp;
             <label>Type: {{ sentiment.result.type }}</label>
         </div>
        
@@ -19,7 +19,7 @@
                     {{ sentence }} 
                 </span>
                 
-                <label>Popolarity: {{ sentiment.polarity }}</label> &nbsp;
+                <label>Polarity: {{ sentiment.polarity }}</label> &nbsp;
                 <label>Type: {{ sentiment.type }}</label>  &nbsp;
                 <br>
             {{/each}}
